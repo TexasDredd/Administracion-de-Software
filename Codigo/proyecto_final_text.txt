@@ -1,0 +1,785 @@
+           Administración de Software y Proyectos
+
+
+                              Proyecto Final
+            Digitalización de Órdenes - Diamond Event & Tent
+
+
+
+Alumno.
+     ▪ Angel Cruz Mora
+     ▪ Cesar Arrioja Pizaña
+Maestra.
+     Margarita Mondragon Arellano
+Table of Contents
+
+1. RESUMEN EJECUTIVO               1
+
+1.1 OBJETIVO                       1
+1. 2 BENEFICIOS                    1
+1.3 COSTO ESTIMADO                 2
+1.4 DURACIÓN                       2
+
+2. DESCRIPCIÓN DEL PROYECTO        2
+
+2.1 PROBLEMA                       2
+2.2 OBJETIVO GENERAL               2
+2.3 ALCANCE                        3
+2.4 STAKEHOLDERS                   3
+
+3. ANÁLISIS DEL NEGOCIO            4
+
+3.1 ESTUDIO DE MERCADO             4
+3.2 COMPETENCIA                    5
+3.3 JUSTIFICACIÓN DEL PROYECTO     6
+
+4. FACTIBILIDAD                    6
+
+4.1 TÉCNICA                        6
+4.2 ECONÓMICA                      7
+4.3 OPERACIONAL                    7
+
+5. REQUERIMIENTOS                  8
+
+5.1 FUNCIONALES Y NO FUNCIONALES   8
+
+6. METODOLOGÍAS                    9
+
+6.1 METODOLOGÍA SELECCIONADA        9
+6.2 JUSTIFICACIÓN                   9
+6.3 FASES DEL PROCESO              10
+7. PUNTOS DE FUNCIÓN                           13
+
+7.1 DETALLE DE COMPONENTES DEL SISTEMA         13
+7.2 PUNTOS DE FUNCIÓN SIN AJUSTAR              13
+7.3 EVALUACIÓN DEL GRADO DE INFLUENCIA         14
+7.4 PUNTOS DE FUNCIÓN AJUSTADOS                14
+7.5 ESTIMACIÓN DE TIEMPO                       14
+7.6 ESTIMACIÓN DE COSTOS (PRESUPUESTO)         16
+
+8. PLAN DEL PROYECTO                           19
+
+8.1 EDT (ESTRUCTURA DE DESGLOSE DEL TRABAJO)   19
+8.2 CRONOGRAMA                                 20
+8.3 ROLES DEL EQUIPO                           22
+
+14. ANEXOS                                     23
+1. Resumen Ejecutivo
+
+1.1 Objetivo
+El objetivo central es la digitalización y centralización operativa de la empresa.
+Meta Principal.
+        Sustituir el 100% del uso de papel en la gestión de órdenes para el final de la
+        implementación.
+Objetivos Específicos.
+
+    ❖ Desarrollar un módulo de acceso seguro para personal autorizado (Administración y
+      Repartidores).
+
+    ❖ Reducir en un 40% el tiempo de asignación manual y distribución física de órdenes.
+
+    ❖ Garantizar visibilidad en tiempo real de las fechas de recolección (Pick-up) para
+      mejorar la rotación de inventario.
+
+    ❖ Lograr una comunicación bidireccional instantánea entre la oficina y los dispositivos
+      móviles de los conductores.
+
+
+
+1. 2 Beneficios
+La transición de un sistema manual a una plataforma web ofrece las siguientes ventajas:
+
+    ❖ Eficiencia Logística: Elimina los cuellos de botella generados por procesos manuales y
+      la falta de sincronización en tiempo real.
+    ❖ Reducción de Errores: Disminuye el riesgo de errores humanos en la transcripción de
+      datos.
+
+    ❖ Inteligencia Operativa: La plataforma actúa como una columna vertebral tecnológica
+      que ofrece visibilidad total sobre el estado de inventarios y rutas.
+
+    ❖ Impacto Ambiental y Económico: Ahorro en insumos de impresión y reducción de la
+      huella ecológica al eliminar el papel.
+
+
+
+
+                                                                                           1
+   ❖ Trazabilidad Especializada: A diferencia de sistemas genéricos, permite el seguimiento
+     específico del retorno de activos (Pick-up) y la segmentación por tipo de equipo (Events
+     vs. Party).
+
+
+
+1.3 Costo Estimado
+El proyecto contara con 2 desarrolladores (Full-Stack), los cuales participaran desde la
+planeación hasta el desarrollo del MVP. Debido a los requerimientos y especificaciones
+necesarios, se estimó que el costo del proyecto será de $16,000 US.
+
+
+
+1.4 Duración
+Se estima que la duración del proyecto será de 16 semanas o 4 meses, donde participaran 2
+desarrolladores Full-Stack.
+
+
+
+
+2. Descripción del Proyecto
+
+2.1 Problema
+La gestión actual, ejemplificada en el Anexo B, si bien ha sido funcional, presenta limitaciones
+significativas que impactan directamente la cadena de valor de la empresa. La dependencia de
+órdenes impresas genera inestabilidad operativa, pues los documentos físicos son susceptibles
+a pérdidas, daños y errores de interpretación. Asimismo, esta carencia de digitalización impide
+la actualización en tiempo real de la información; cualquier modificación de último momento
+en una orden no se comunica de manera inmediata al personal en campo, lo que deriva en
+retrabajos, demoras y una comunicación deficiente entre la oficina y los repartidores (drivers).
+A esto se suma la complejidad inherente de dar seguimiento a un ciclo de servicio de doble
+etapa (entrega y recolección) y a dos divisiones operativas distintas: "Events" (carpas y
+estructuras) y "Party" (mobiliario y mantelería). Este escenario no solo genera cuellos de botella
+administrativos, sino que también conlleva un impacto ambiental y económico evitable por el
+consumo de insumos de impresión.
+
+
+2.2 Objetivo General
+
+
+                                                                                                2
+Meta Principal
+Sustituir el 100% del uso de papel en la gestión de órdenes para el final de la implementación.
+
+Objetivos Específicos
+
+   ❖ Desarrollar un módulo de acceso robusto que garantice que solo el personal autorizado
+     (Office Members y Drivers) pueda visualizar o modificar la información sensible de las
+     órdenes.
+   ❖ Reducir en un 40% el tiempo que los Office Members dedican actualmente a la
+     asignación manual y distribución física de órdenes de trabajo.
+   ❖ Garantizar la visibilidad total y en tiempo real de las fechas de Pick-up, eliminando los
+     retrasos en la recuperación de material y mejorando la rotación del inventario.
+   ❖ Eliminar el uso de papel en el flujo de trabajo diario, logrando que el 100% de las
+     órdenes sean generadas, consultadas y finalizadas a través de la plataforma web.
+   ❖ Asegurar que los cambios realizados en la oficina se reflejen instantáneamente en los
+     dispositivos móviles de los repartidores, facilitando una comunicación bidireccional sin
+     fricciones.
+
+2.3 Alcance
+El sistema propuesto servirá como una funcionalidad disponible solo para el personal de la
+empresa y se tomaran en cuenta los procesos actuales para la obtención de los datos
+necesarios tal y como se muestra en el Anexo C.
+
+   ❖ Incluye: Módulo de login, base de datos de clientes (tomar en cuenta rol) y órdenes,
+     panel de asignación para oficina, vista de ruta para conductores y sistema de filtrado
+     por división (Events/Party).
+   ❖ No incluye: Facturación electrónica, pasarelas de pago para clientes finales o gestión
+     de nómina de empleados en esta primera fase.
+
+
+
+2.4 Stakeholders
+Diamond Event & Tent es una empresa logística con sede en Salt Lake City que enfrenta una
+alta demanda en sus divisiones de eventos y mobiliario. Su operación actual depende de
+procesos manuales y sistemas basados en papel, lo que ha generado cuellos de botella y riesgos
+en la precisión de los datos, impulsando la necesidad de una transformación hacia una
+infraestructura digital centralizada.
+El personal de oficina representa el núcleo administrativo y estratégico de la empresa. Su rol
+principal es la coordinación de servicios y la gestión de inventarios, pero actualmente se ven
+limitados por la carga operativa y la falta de visibilidad en tiempo real. Para este grupo, el
+
+
+
+                                                                                              3
+proyecto es una herramienta de inteligencia operativa que busca eliminar los errores de
+transcripción y optimizar la comunicación interna.
+Por su parte, los drivers constituyen el brazo ejecutor en ruta, encargándose de la entrega y
+recolección física de los activos. Su interacción con el proyecto es crítica, ya que la transición
+del papel a la plataforma web busca proporcionarles rutas optimizadas y una sincronización
+inmediata con la oficina. Su adopción tecnológica es el factor determinante para lograr la
+agilidad logística y mantener el estándar de excelencia de la compañía.
+
+
+
+
+3. Análisis del Negocio
+
+3.1 Estudio de Mercado
+El mercado de la logística de eventos en Norteamérica, y específicamente en el corredor
+tecnológico de Utah (Silicon Slopes), está experimentando una transformación acelerada hacia
+la digitalización. Se estima que el mercado global de software para gestión de eventos alcanzará
+los 34.7 billones de USD para el año 2029, con una tasa de crecimiento anual compuesta
+(CAGR) del 17.4%.
+Tendencias Clave:
+   •   Sostenibilidad Operativa: Existe una presión creciente por reducir la huella de
+       carbono. La eliminación del papel no solo ahorra costos directos, sino que alinea a
+       Diamond Event & Tent con las políticas de "Logística Verde" que demandan los
+       grandes clientes corporativos en Salt Lake City y Park City.
+   •   Visibilidad en Tiempo Real: La demanda de los clientes ya no se limita a la entrega;
+       ahora exigen confirmaciones instantáneas y trazabilidad. En Utah, el volumen de
+       eventos corporativos y bodas de destino ha crecido un 15% post-pandemia, saturando
+       las capacidades de las empresas que aún operan manualmente.
+   •   Reducción de la Brecha Digital: Actualmente, el 45.5% de las empresas logísticas
+       siguen dependiendo del papel para procesos críticos. Aquellas que adoptan soluciones
+       móviles logran reducir los errores de entrada de datos en un 80% y los tiempos de
+       procesamiento en un $50%.
+
+
+
+
+                                                                                                4
+3.2 Competencia
+La competencia de Diamond Event & Tent en el estado de Utah se puede clasificar en tres
+categorías principales, frente a las cuales nuestra solución personalizada presenta ventajas
+competitivas claras:
+   1. Sistemas TMS Genéricos (Transport Management Systems):
+           o   Ejemplos: Soluciones como Samsara o Fleetio.
+           o   Limitaciones: Están diseñados para logística de "punto A a punto B". Carecen
+               de la lógica de "retorno de activos" (Pick-up) que es vital para el inventario de
+               Diamond. No permiten segmentar fácilmente entre materiales de "Events"
+               (estructuras pesadas) y "Party" (detalles delicados).
+           o   Nuestra Ventaja: Flujo de trabajo bidireccional específico (Delivery + Pick-up)
+               integrado en una sola orden.
+   2. Software Comercial de Alquiler (SaaS):
+           o   Ejemplos: Point of Rental, Goodshuffle Pro.
+           o   Limitaciones: Aunque son potentes, suelen ser costosos ($US$ 200-500
+               mensuales por usuario) y presentan una "rigidez de proceso". Obligan a la
+               empresa a adaptar su forma de trabajar al software, y no al revés. Además, la
+               curva de aprendizaje para los repartidores (drivers) suele ser elevada debido a
+               interfaces sobrecargadas de funciones innecesarias.
+           o   Nuestra Ventaja: Interfaz simplificada y optimizada para móviles ("Mobile-
+               First") que atiende únicamente los requerimientos detectados en Diamond,
+               eliminando el ruido visual y mejorando la adopción tecnológica.
+
+
+                                                                                              5
+   3. Competidores Locales con Procesos Manuales:
+           o   Contexto: Pequeñas casas de renta en la zona metropolitana de SLC.
+           o   Riesgos: Su incapacidad de respuesta rápida ante cambios de último minuto les
+               hace perder contratos grandes.
+           o   Nuestra Ventaja: Agilidad operativa extrema. Mientras un competidor manual
+               debe llamar por teléfono al driver para avisar de un cambio, nuestro sistema
+               sincroniza la orden instantáneamente.
+
+
+3.3 Justificación del Proyecto
+La transición hacia una infraestructura digital busca no solo la modernización técnica, sino una
+reingeniería completa del flujo de trabajo actual. Para alcanzar esta visión, se han definido
+objetivos específicos que atacan directamente las ineficiencias logísticas:
+
+   ❖ Centralización de datos: Un lugar único para visualizar nombres, contactos, fechas de
+       entrega y listas de artículos.
+   ❖ Roles       de      Usuario:       Acceso   diferenciado     para     Office     Members
+       (administración/asignación) y Drivers (consulta/contacto).
+   ❖ Gestión de Ciclo de Vida: Capacidad de dar seguimiento a la orden desde la creación,
+       pasando por el Delivery hasta el Pick-up.
+   ❖ Segmentación Clara: Clasificación de órdenes por categorías (Events vs. Party) para
+       asignar el equipo y personal adecuado.
+
+
+
+
+4. Factibilidad
+
+4.1 Técnica
+        Actualmente, la empresa dispone de computadoras en el área administrativa (Office
+Members) y dispositivos móviles utilizados por los empleados operativos (Drivers), además de
+conexión a internet para la gestión diaria de sus actividades. El sistema propuesto será una
+plataforma web, lo que significa que no requiere instalación de software especializado en cada
+equipo, sino únicamente acceso mediante navegador y conexión a internet, lo cual facilita su
+implementación.
+
+
+                                                                                              6
+        Desde el punto de vista tecnológico, no se requiere hardware avanzado ni
+infraestructura compleja. El sistema podrá alojarse en un servidor en la nube, garantizando
+disponibilidad, almacenamiento seguro de la información y respaldo de datos. Asimismo, el
+uso de una base de datos centralizada permitirá que la información esté actualizada en tiempo
+real, reduciendo inconsistencias y errores derivados del manejo manual.
+
+
+
+4.2 Económica
+        En cuanto a los costos iniciales, el proyecto no requiere una inversión elevada en
+hardware, ya que la empresa ya cuenta con computadoras en el área administrativa y
+dispositivos móviles utilizados por los empleados operativos. El sistema será desarrollado
+como parte del proyecto académico, por lo que no se contempla un costo directo de
+desarrollo externo. Sin embargo, podrían considerarse gastos relacionados con hosting en la
+nube, dominio web y configuración inicial del sistema.
+Respecto a los costos de operación y mantenimiento, estos incluirán el pago anual del
+servidor, posibles actualizaciones del sistema y soporte técnico básico. Estos costos son
+relativamente bajos en comparación con los beneficios esperados, ya que el sistema estará
+basado en tecnología web estándar y no requerirá infraestructura especializada.
+
+
+
+4.3 Operacional
+        La gran demanda de ordenes en la empresa provoca una saturación para los miembros
+de Office los cuales operan y administran a los empleados, así como distribuyen las ordenes
+de clientes a estos empleados. El sistema resultara factible si dichos administradores perciben
+mayor claridad y eficiencia en sus procesos a la hora de abordar dichas ordenes, ya que,
+además estaremos digitalizando sus procesos y reduciendo errores humanos.
+
+
+
+
+                                                                                              7
+5. Requerimientos
+
+5.1 Funcionales y No Funcionales
+
+
+
+
+                                   8
+6. Metodologías
+
+6.1 Metodología Seleccionada
+Para el desarrollo del sistema, el equipo de proyecto ha decidido implementar una
+metodología híbrida basada en Scrum (enfoque ágil) combinada con elementos estructurados
+del modelo Modelo en Cascada.
+Esta combinación permite:
+
+   ❖ Mantener una planeación formal y documentada.
+   ❖ Trabajar por iteraciones controladas.
+   ❖ Adaptarse a cambios en los requerimientos.
+   ❖ Entregar avances funcionales parciales del sistema.
+   ❖ Reducir riesgos técnicos y organizacionales.
+
+
+
+6.2 Justificación
+La elección de esta metodología se fundamenta en los siguientes aspectos:
+2.1 Naturaleza del Proyecto
+   El sistema para desarrollar requiere:
+
+   ❖ Definición clara de requerimientos.
+   ❖ Documentación formal para evaluación académica.
+   ❖ Validación continua con el usuario o asesor.
+   ❖ Entregables parciales verificables.
+   Un modelo completamente rígido (como cascada puro) limitaría la retroalimentación
+   continua, mientras que un modelo 100% ágil podría no generar suficiente documentación
+   formal. Por ello, la metodología híbrida equilibra ambos enfoques.
+2.2 Ventajas del Enfoque Ágil (Scrum)
+
+   ❖ Entregas incrementales funcionales.
+   ❖ Revisión y mejora continua.
+   ❖ Mayor control sobre cambios.
+   ❖ Trabajo colaborativo en equipo.
+2.3 Ventajas del Enfoque Estructurado
+
+   ❖ Documentación clara desde el inicio.
+
+
+                                                                                      9
+    ❖ Definición formal de fases.
+    ❖ Mejor organización del proyecto.
+    ❖ Evidencia académica del proceso.
+
+
+
+6.3 Fases del Proceso
+El proyecto se desarrollará en las siguientes fases:
+       Fase 1: Inicio y Planeación
+               Objetivo:
+                       Definir el alcance del proyecto y establecer la base organizacional.
+               Actividades:
+
+                   ❖ Definición del problema.
+                   ❖ Identificación de stakeholders.
+                   ❖ Análisis preliminar de requerimientos.
+                   ❖ Elaboración del plan de trabajo.
+                   ❖ Asignación de roles del equipo.
+               Entregables:
+
+                   ❖ Documento de alcance.
+                   ❖ Cronograma del proyecto.
+                   ❖ Acta de inicio.
+                   ❖ Matriz de roles y responsabilidades.
+
+
+       Fase 2: Análisis de Requerimientos
+               Objetivo:
+                      Recopilar y documentar los requerimientos funcionales y no
+               funcionales.
+               Actividades:
+
+                   ❖ Entrevistas o sesiones de levantamiento.
+                   ❖ Identificación de casos de uso.
+                   ❖ Priorización de requerimientos.
+                   ❖ Validación con el usuario o asesor.
+               Entregables:
+
+                   ❖ Documento de especificación de requerimientos.
+
+
+                                                                                              10
+           ❖ Lista priorizada de funcionalidades (Product Backlog).
+           ❖ Diagramas de casos de uso.
+
+
+
+
+Fase 3: Diseño del Sistema
+       Objetivo:
+               Definir la arquitectura y estructura técnica del sistema.
+       Actividades:
+           ❖ Diseño de arquitectura.
+           ❖ Modelado de base de datos.
+           ❖ Diagramas UML (clases, secuencia, componentes).
+           ❖ Diseño de interfaces (mockups o prototipos).
+       Entregables:
+
+           ❖ Documento de diseño del sistema.
+           ❖ Diagramas UML.
+           ❖ Prototipos de interfaz.
+           ❖ Modelo entidad-relación.
+
+
+Fase 4: Desarrollo Iterativo (Sprints)
+       Objetivo:
+               Construcción incremental del sistema. El desarrollo se realizará en
+               iteraciones de 1 a 2 semanas (Sprints).
+       Actividades por Sprint:
+
+           ❖ Planeación del Sprint.
+           ❖ Desarrollo de funcionalidades priorizadas.
+           ❖ Pruebas unitarias.
+           ❖ Revisión del Sprint.
+           ❖ Retrospectiva.
+       Entregables por Sprint:
+
+           ❖ Incremento funcional del sistema.
+           ❖ Código fuente documentado.
+           ❖ Reporte de avance.
+
+
+                                                                                     11
+           ❖ Registro de incidencias.
+
+
+Fase 5: Pruebas e Integración
+       Objetivo:
+              Validar el correcto funcionamiento del sistema.
+       Actividades:
+
+           ❖ Pruebas de integración.
+           ❖ Pruebas funcionales.
+           ❖ Corrección de errores.
+           ❖ Validación con el usuario.
+       Entregables:
+
+           ❖ Plan de pruebas.
+           ❖ Reporte de pruebas.
+           ❖ Sistema corregido y validado.
+
+
+Fase 6: Implementación y Entrega Final
+       Objetivo: Entregar el sistema completo y documentado.
+       Actividades:
+           ❖ Preparación del entorno de implementación.
+           ❖ Capacitación básica (si aplica).
+           ❖ Documentación final.
+           ❖ Presentación del sistema.
+       Entregables:
+
+           ❖ Sistema funcional final.
+           ❖ Manual de usuario.
+           ❖ Manual técnico.
+           ❖ Informe final del proyecto.
+
+
+
+
+                                                                12
+7. Puntos de Función
+
+7.1 Detalle de Componentes del Sistema
+
+
+
+
+7.2 Puntos de Función sin Ajustar
+
+
+
+
+                                         13
+7.3 Evaluación del Grado de Influencia
+
+
+
+
+7.4 Puntos de Función Ajustados
+
+
+
+
+7.5 Estimación de Tiempo
+Dados los puntos de función ajustados calculados en la sección anterior, ahora estimaremos el
+esfuerzo total requerido para el desarrollo del proyecto, tomando en cuenta que los
+desarrolladores contaran con una jornada laboral de 8 horas y trabajaran 5 días de la semana:
+
+
+                                                                                          14
+                  𝐸𝑠𝑓𝑢𝑒𝑟𝑧𝑜 = 𝐹𝑃 ∗ 8 = 77 ∗ 8 = 616 ℎ𝑜𝑟𝑎𝑠/𝑝𝑒𝑟𝑠𝑜𝑛𝑎
+
+
+Y después definiremos las horas por desarrollador:
+
+
+                                     616
+                          𝐻𝑜𝑟𝑎𝑠 =        = 308 ℎ𝑜𝑟𝑎𝑠 ∗ 𝑝𝑒𝑟𝑠𝑜𝑛𝑎
+                                      2
+
+
+Asumiremos que los desarrolladores solo cuentan con 5 horas efectivas de trabajo sin
+interrupción, de esta forma calcularemos una estimación de las horas efectivas por semana:
+
+
+               𝐻𝑜𝑟𝑎𝑠𝑆𝑒𝑚𝑎𝑛𝑎𝑙𝑒𝑠 = 5 ℎ𝑜𝑟𝑎𝑠 ∗ 5 𝑑𝑖𝑎𝑠 = 25 ℎ𝑟𝑠 ∗ 𝑠𝑒𝑚𝑎𝑛𝑎
+
+
+
+La duración ideal de nuestro proyecto será de:
+
+
+                                             308
+                         𝑑𝑢𝑟𝑎𝑐𝑖𝑜𝑛𝐼𝑑𝑒𝑎𝑙 =         = 12.32 𝑠𝑒𝑚𝑎𝑛𝑎𝑠
+                                             25
+
+
+
+Nuestro tiempo ideal de desarrollo será de aproximadamente 3 meses, sin embargo, debido a
+que es probable que se presenten inconvenientes que retrasen el desarrollo del proyecto,
+agregaremos un margen del 30% a nuestro tiempo de desarrollo:
+
+
+                       𝑑𝑢𝑟𝑎𝑐𝑖𝑜𝑛𝑅𝑒𝑎𝑙 = 12.32 ∗ 1.3 = 16.01 𝑠𝑒𝑚𝑎𝑠
+
+
+El proyecto requerirá de 4 meses de desarrollo activo para llegar a terminarlo.
+
+
+
+
+                                                                                       15
+7.6 Estimación de Costos (Presupuesto)
+
+
+Sueldos
+Asignaremos un sueldo mensual de $1,800 USD($36,000MXN) mensuales por
+desarrollador:
+
+
+
+  Sueldo por Desarrollador Mensual             $1,800 USD
+
+
+        𝑠𝑢𝑒𝑙𝑑𝑜𝑠 = 1,800 𝑈𝑆𝐷 ∗ 2 𝑑𝑒𝑠𝑎𝑟𝑟𝑜𝑙𝑙𝑎𝑑𝑜𝑟𝑒𝑠 ∗ 4 𝑚𝑒𝑠𝑒𝑠 = $14,400 𝑈𝑆𝐷
+
+
+
+
+Otros Gastos
+Se detecto una variedad de gastos operativos dentro del proyecto, consistentes en lo
+siguiente:
+ TECNOLOGIA/SERVICIO             Justificación/Plan      Costo mensual      COSTO TOTAL
+                                       elegido                               (4 MESES)
+ AWS Hosting                 Uso de AWS ECS                  $50 USD            $200
+ (Next.js +                  (Fargate) o                                        USD
+ Docker)                     instancias EC2
+                             (t3.medium) para
+                             correr los contenedores
+                             Docker del
+                             frontend y backend sin
+                             preocuparte
+                             por la infraestructura
+                             subyacente.
+ PostgresDB                  Base de datos relacional        $60 USD             $240
+ (AWS RDS)                   administrada                                        USD
+                             (Amazon RDS
+                             t3.micro/medium).
+                             Incluye copias de
+                             seguridad
+                             automáticas y alta
+                             disponibilidad, vital
+                             para no perder contratos.
+
+
+
+
+                                                                                        16
+Apache Kafka      Levantar Kafka nativo en    $30 USD    $120
+(Managed)         AWS (MSK) es costoso                   USD
+                  para un MVP
+                  (+$500/mes). Lo ideal es
+                  usar un servicio
+                  Serverless administrado
+                  como Confluent Cloud o
+                  Upstash Kafka, donde
+                  pagas solo por el tráfico
+                  de eventos.
+Clerk             Clerk cuenta con un nivel   $25 USD    $100
+(Autenticación)   gratuito muy                           USD
+                  generoso (hasta 10,000
+                  usuarios). Sin
+                  embargo, para usar
+                  dominios
+                  personalizados (ej.
+                  auth.diamondevent.com)
+                  y roles
+                  avanzados, ocupas el
+                  Plan Pro.
+Redes, Load       En AWS, servicios como      $45 USD    $180
+Balancers y       Application                            USD
+DNS               Load Balancer (ALB),
+                  transferencia de
+                  datos de salida y la
+                  gestión del
+                  dominio mediante Route
+                  53 tienen
+                  costos fijos y variables.
+Herramientas de   Licencias para los 2        $38 USD    $152
+Colaboración      Desarrolladores:                       USD
+                  GitHub Team ($8/mes)
+                  para repositorios
+                  privados y CI/CD, y
+                  Figma Professional
+                  ($30/mes) para los
+                  prototipos UI de Next.js.
+Registro de       Compra del dominio           Pago      $15
+Dominio           anual (.com o .net)          Único     USD
+                  mediante Route 53 o
+                  Namecheap.
+Fondo de          AWS tiene costos            Variable   $593
+Contingencia      "ocultos" (Data                        USD
+AWS               Transfer, NAT Gateways,
+                  picos de
+                  peticiones,
+                  almacenamiento S3).
+
+
+                                                                17
+                             Tener un margen del 35%
+                             es una
+                             regla de oro para no
+                             detener el
+                             proyecto.
+ TOTAL                                                                           $1,600
+ ESTIMADO                                                                         USD
+
+
+
+
+Total
+Finalmente, el costo total del proyecto constara de los gastos totales tomando en cuenta tanto
+los sueldos de nuestros desarrolladores como gastos variados que serán indispensables para el
+desarrollo y despliegue del sistema.
+
+
+
+                    Gasto                                      Costo (USD)
+
+ Sueldos para Desarrolladores                                   14,400 USD
+
+ Otros gastos                                                   1,600 USD
+
+
+                    Total                                       16,000 USD
+
+
+
+Con esto podemos concluir que nuestro proyecto tomara aproximadamente 4 meses de
+desarrollo con un costo total de $16,000 USD.
+
+
+       Tiempo estimado de desarrollo.               4 meses
+       Costo Estimado Total.                        16,000 USD
+
+
+
+
+                                                                                           18
+8. Plan del Proyecto
+
+8.1 EDT (Estructura de Desglose del Trabajo)
+
+
+
+
+                                               19
+8.2 Cronograma
+
+
+
+
+                 20
+21
+8.3 Roles del Equipo
+    ❖ PM / PMO (Angel Cruz):
+
+                  Project Manager y Project Management Office.
+
+    ❖ PO / Stakeholders (Diamdon Event & Tent):
+
+                  Product Owner y los interesados del negocio.
+
+    ❖ Analista (Cesar Arrioja):
+
+                  Analista Funcional y Analista de Procesos.
+
+    ❖ Arq. SW / DBA / CISO (Angel Cruz & Cesar Arrioja):
+
+                  Arquitecto de Software, Administrador de Base de Datos y Oficial de
+                  Seguridad de la Información.
+
+    ❖ Desarrolladores (Angel Cruz & Cesar Arrioja):
+
+                  Dev Backend, Dev Frontend (Oficina) y Dev Mobile/Web (Drivers).
+
+    ❖ QA (Cesar Arrioja):
+
+                  QA Lead y QA Tester.
+
+
+
+
+                                                                                  22
+14. Anexos
+Anexo A. Imagen y localización de la empresa Diamond Event and Tent.
+
+
+
+
+Anexo B. Contrato creado para el evento International Agri-Center llevado a cabo en California,
+Tulare.
+
+
+
+
+                                                                                                  23
+     Anexo C. Esquema general del sistema que muestra como interactúa nuestro proyecto con la
+     infraestructura de la empresa.
+
+                                                                                          Proyecto
+
+
+                                                                           Office Members
+        Infraestructura de la
+             Compañia                                                      Visualizador de               Panel de
+                                                                        Contratos por Seccion           Asignacion
+Pagina Web             Visualizador de
+                          Contratos
+
+
+                                                                                Drivers
+
+
+
+                                                                                          Ordenes Activas
+                                                                                            Asignadas
+
+
+
+
+                                                                                                       24
+

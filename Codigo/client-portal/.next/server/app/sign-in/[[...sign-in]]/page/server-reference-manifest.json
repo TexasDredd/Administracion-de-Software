@@ -1,0 +1,53 @@
+{
+  "node": {
+    "009136a659b01047f3a3043bf819dd222aa9b33f71": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": 51219,
+          "async": false,
+          "exportedName": "invalidateCacheAction",
+          "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+        }
+      },
+      "exportedName": "invalidateCacheAction",
+      "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/server-actions.js"
+    },
+    "0049a1605cbb9dad017693f354bb407eb891d4d09e": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": 51219,
+          "async": false,
+          "exportedName": "createOrReadKeylessAction",
+          "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "exportedName": "createOrReadKeylessAction",
+      "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "00042b07c9affdb3158de6189b5cf26e4c2f6f0d43": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": 51219,
+          "async": false,
+          "exportedName": "deleteKeylessAction",
+          "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "exportedName": "deleteKeylessAction",
+      "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    },
+    "40fde72ff1f82ae1c2825f426bbca42c1810f5048a": {
+      "workers": {
+        "app/sign-in/[[...sign-in]]/page": {
+          "moduleId": 51219,
+          "async": false,
+          "exportedName": "syncKeylessConfigAction",
+          "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+        }
+      },
+      "exportedName": "syncKeylessConfigAction",
+      "filename": "client-portal/node_modules/@clerk/nextjs/dist/esm/app-router/keyless-actions.js"
+    }
+  },
+  "edge": {}
+}
